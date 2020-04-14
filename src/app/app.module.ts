@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { RouterModule, Router } from '@angular/router'
+
 /* Import custom module */
 import { LayoutModule } from './shared/layout/layout.module';
 import { HomeComponent } from './pages/home/home.component';
@@ -24,9 +26,12 @@ import { AboutComponent } from './pages/about/about.component';
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    LayoutModule
+    LayoutModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(router: Router) {}
+}

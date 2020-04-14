@@ -9,10 +9,6 @@ import { ComponentsComponent } from './pages/components';
 
 const routes: Routes = [
   {
-    path: '',
-    component: HomeComponent
-  },
-  {
     path: 'about',
     component: AboutComponent
   },
@@ -27,6 +23,11 @@ const routes: Routes = [
   {
     path: 'components',
     component: ComponentsComponent
+  },
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
   }
 ];
 
