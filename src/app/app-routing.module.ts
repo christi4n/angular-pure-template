@@ -5,6 +5,7 @@ import { AboutComponent } from './pages/about';
 import { PricingComponent } from './pages/pricing';
 import { ContactComponent } from './pages/contact';
 import { ComponentsComponent } from './pages/components';
+import { DownloadComponent } from './pages/download';
 
 
 const routes: Routes = [
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'components',
     component: ComponentsComponent
+  },
+  {
+    path: 'download',
+    component: DownloadComponent
   },
   {
     path: '',

@@ -15,14 +15,14 @@
   
         <div class="collapse navbar-collapse" id="navbar-collapse-uarr">
           <ul class="nav navbar-nav navbar-right">
-            <li><a routerLink="home" routerLinkActive="active" title="Home">Home</a></li>
-            <li><a routerLink="about" routerLinkActive="active" title="About"> About</a></li>
-            <li><a routerLink="pricing" routerLinkActive="active" title="Pricing"> Pricing </a></li>
-            <li><a routerLink="contact" routerLinkActive="active" title="Contact">Contact</a></li>
-            <li><a routerLink="components" routerLinkActive="active" title="Components">Components</a></li>
+            <li><a [routerLink]="['/home']" routerLinkActive="active" title="Home">Home</a></li>
+            <li><a [routerLink]="['/about']" routerLinkActive="active" title="About"> About</a></li>
+            <li><a [routerLink]="['/pricing']" routerLinkActive="active" title="Pricing"> Pricing </a></li>
+            <li><a [routerLink]="['/contact']" routerLinkActive="active" title="Contact">Contact</a></li>
+            <li><a [routerLink]="['/components']" routerLinkActive="active" title="Components">Components</a></li>
             <li>
               <p>
-                <a href="./download.html" class="btn btn-primary navbar-btn" title="">Download</a>
+                <a [routerLink]="['/download']" routerLinkActive="active" class="btn btn-primary navbar-btn" title="">Download</a>
               </p>
             </li>
             

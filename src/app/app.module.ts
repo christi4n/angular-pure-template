@@ -13,6 +13,7 @@ import { PricingComponent } from './pages/pricing/pricing.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ComponentsComponent } from './pages/components/components.component';
 import { AboutComponent } from './pages/about/about.component';
+import { DownloadComponent } from './pages/download/download.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { AboutComponent } from './pages/about/about.component';
     ContactComponent,
     ComponentsComponent,
     AboutComponent,
+    DownloadComponent,
   ],
   imports: [
     BrowserModule,
