@@ -14,6 +14,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ComponentsComponent } from './pages/components/components.component';
 import { AboutComponent } from './pages/about/about.component';
 import { DownloadComponent } from './pages/download/download.component';
+import { ExternalLinkDirective } from './external-link.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DownloadComponent } from './pages/download/download.component';
     ComponentsComponent,
     AboutComponent,
     DownloadComponent,
+    ExternalLinkDirective,
   ],
   imports: [
     BrowserModule,
