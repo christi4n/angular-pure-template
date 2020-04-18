@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -8,6 +9,15 @@ import { Title } from '@angular/platform-browser';
 })
 export class ContactComponent implements OnInit {
 
+  public messageForm = new FormGroup( 
+    {
+      name: new FormControl('', Validators.required),
+      email: new FormControl('', Validators.email),
+      subject: new FormControl('', Validators.required),
+      text: new FormControl('', Validators.required)
+    }
+  );
+  
   constructor(private titleService: Title) { }
 
   // Getters and Setters for page title
@@ -21,6 +31,11 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
     this.setTitle('Contact Pure')
+  }
+
+  /* Action called by clicking on the submit btn */
+  sendMessage() {
+
   }
 
 }

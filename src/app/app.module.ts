@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+// Implement Reactive forms
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { RouterModule, Router } from '@angular/router'
 
 /* Import custom module */
@@ -31,7 +34,9 @@ import { ExternalLinkDirective } from './external-link.directive';
     BrowserModule,
     AppRoutingModule, 
     LayoutModule,
-    RouterModule
+    RouterModule,
+    FormsModule, // Needed if you need to use forms inside components
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
