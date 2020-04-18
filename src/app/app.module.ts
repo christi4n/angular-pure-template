@@ -9,6 +9,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { RouterModule, Router } from '@angular/router'
 
+// Import ng-bootstrap-form-validation to display error messages in forms
+import { NgBootstrapFormValidationModule, CUSTOM_ERROR_MESSAGES } from 'ng-bootstrap-form-validation';
+import {CUSTOM_ERRORS} from "./custom-errors";
+
 /* Import custom module */
 import { LayoutModule } from './shared/layout/layout.module';
 import { HomeComponent } from './pages/home/home.component';
@@ -36,9 +40,16 @@ import { ExternalLinkDirective } from './external-link.directive';
     LayoutModule,
     RouterModule,
     FormsModule, // Needed if you need to use forms inside components
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgBootstrapFormValidationModule.forRoot()
   ],
-  providers: [],
+  providers: [
+    {
+      provide: CUSTOM_ERROR_MESSAGES,
+      useValue: CUSTOM_ERRORS,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

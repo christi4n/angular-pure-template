@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 
+import { NgBootstrapFormValidationModule } from 'ng-bootstrap-form-validation';
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
